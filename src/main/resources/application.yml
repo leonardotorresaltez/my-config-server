@@ -1,0 +1,19 @@
+server.port: 8888
+
+spring.cloud.config.uri: http://localhost:8888
+
+spring.security.user.name: admin
+spring.security.user.password: admin
+
+spring.application.name: config-service
+
+spring.profiles.active: native
+spring.cloud.config.server.native.search-locations: classpath:/config
+
+
+spring.cloud.bus.enabled: true
+spring.cloud.stream.kafka.binder.brokers: localhost:9092
+
+management.endpoints.web.exposure.include: '*'
+
+
